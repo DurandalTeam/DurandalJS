@@ -1,0 +1,70 @@
+
+        #friendbox, #photobox, #videobox{
+            background-color: white;
+            margin-top: 50px;
+        }
+
+        #menu, #ptmenu, #vdmenu {
+            height: 33px;
+            background-color: rgba(215, 215, 215, 0.59);
+            padding: 1px 30px;
+        }
+
+        #leftmenu a,#ptleftmenu a,#vdleftmenu a{
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #menu1:hover, #ptmenu1:hover, #vdmenu1:hover{
+            color: white;
+            background-color: blue;
+        }
+
+        div #rightmenu, div #ptrightmenu, div #vdrightmenu{
+            float: right;
+        }
+
+        div #leftmenu, div #ptleftmenu, div #vdleftmenu{
+            float: left;
+            padding-left: 0px;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        #tabLeft{
+            background:none;
+            padding: 0px;
+        }
+
+        /*
+           override bootstrap
+        */
+        .image.img-thumbnail{
+            height: 104px;
+            padding: 0px;
+        }
+        .col-sm-4{
+            padding: 0px;
+        }
+
+        li .photo{
+            position: relative;
+        }
+        .text
+        {
+            position:absolute;
+            top: 85px;
+            left:5px;
+            color:white;
+            font-size:10px;
+            font-weight:bold;
+        }
+     #friendbox:hover #rightmenu, #photobox:hover #ptrightmenu, #videobox:hover #vdrightmenu {
+            display: block;
+        }
