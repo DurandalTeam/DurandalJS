@@ -13,7 +13,8 @@
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
                 { route: 'friendsuggestion', moduleId: 'viewmodels/friendsuggestion', nav: true },
                 { route: 'sidebar_left', moduleId: 'viewmodels/sidebar_left', nav: true },
-                { route: 'group_suggestion', moduleId: 'viewmodels/group_suggestion', nav: true }
+                { route: 'group_suggestion', moduleId: 'viewmodels/group_suggestion', nav: true },
+                { route: 'feed', moduleId: 'viewmodels/feed', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
