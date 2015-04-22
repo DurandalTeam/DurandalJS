@@ -8,7 +8,8 @@
         },
         activate: function () {
             router.map([
-                { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
+                { route: '', title:'Time Line', moduleId: 'viewmodels/timeline', nav: true },
+                { route: 'Home', moduleId: 'viewmodels/home', nav: true },
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
                 { route: 'friendsuggestion', moduleId: 'viewmodels/friendsuggestion', nav: true },
                 { route: 'sidebar_left', moduleId: 'viewmodels/sidebar_left', nav: true },
@@ -19,3 +20,5 @@
         }
     };
 });
+
+
