@@ -1,0 +1,117 @@
+<style>
+    .showButton{
+        display: none;
+        margin-right: 3px;
+    }
+    .showCloseButton:hover .showButton{
+        display : block;
+    }
+    .closeButton {
+        float: right;
+        font-size: 11px;
+    }
+    .closeButton:hover {
+        color: white;
+        background-color: #6B89B6;
+        padding: 1px;
+        border-radius: 3px;
+    }
+    .frame{
+        padding-top: 10px;
+        padding-bottom: 6px;
+        width:254px;
+        /*border: 1px solid black;*/
+        float:left;
+    }
+    .title a{
+        float: right;
+    }
+    .odd{
+        width:4%;
+        border-radius: 0px;
+        /*margin-right: -3px;*/
+    }
+    .even{
+        width:4%;
+        border-radius: 0px;
+    }
+    .groupName{
+        font-size:12px;
+        font-weight: bold;
+    }
+    .description{
+        font-size:12px;
+        color: rgb(145, 151, 163);
+    }
+    .mg{
+      width: 50%;
+      border-radius: 3px;
+      margin: -1px;
+    }
+    .topImage{
+      margin-bottom: 4px;
+    }
+</style>
+<div class="frame">
+    <div class="row">
+        <div class="col-md-8"><p>Group Suggestion</p></div>
+        <div class="col-md-4"><a href="#" >See All</a></div>
+    </div>
+
+    <div class="row showCloseButton item" >
+        <div class="col-md-3" style="padding-right: 0px; padding-left: 15px;">
+          <div class="topImage">
+            <img class="img-rounded mg" src="images/1.jpg">
+            <img class="img-rounded mg" src="images/2.jpg">
+          </div>
+          <div>
+            <img class="img-rounded mg" src="images/3.jpg">
+            <img class="img-rounded mg" src="images/4.jpg">
+          </div>
+        </div>
+        
+        <div class="col-md-9" >
+          <a href="" title="Delete" id="delete">
+            <span class="glyphicon glyphicon-remove showButton closeButton" aria-hidden="true" ></span>
+          </a>
+          <div>
+            <div>
+                <a href="#">
+                    <div>
+                      <span class="groupName" data-bind="text: groupName">
+                      </span>
+                  </div>
+              </a>
+          </div>
+          <div class="description">
+            Description
+          </div>
+          <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Join</button>
+          </div>
+        </div>
+    </div>
+    
+    <!-- title of group suggestion -->
+    <div class="title">
+    </div>
+    <!-- title of group suggestion -->
+
+
+    <!-- item 1 in group suggestion-->
+    <div style="float:left">
+        <!-- image of person in group suggestion -->
+        <!-- image of person in group suggestion -->
+        <!-- name of group suggestion -->
+        
+    <!-- name of group suggestion -->
+</div>
+<!-- end item 1 in group suggestion -->
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(.delete).click(function(){
+            $(.item).hide();
+        });
+    });
+</script>
