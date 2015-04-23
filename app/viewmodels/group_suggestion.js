@@ -1,7 +1,6 @@
 define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, app, ko, $){
     return{
         groups: ko.observableArray([]),
-        name: ko.observable("tetssdas"),
 
         activate :function(){
 
@@ -30,7 +29,6 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
           }).error(function(jqXhr, textStatus, error) {
               alert("ERROR: " + textStatus + ", " + error);
           });
-            this.name();
         }
     }
 });
