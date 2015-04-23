@@ -1,0 +1,200 @@
+﻿{
+  "friends": {
+    "data": [
+      {
+        "name": "Trương My", 
+        "id": "100000300042544",
+        "mutual":"(10 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/1240358_857812580905402_4872143856131104626_n.jpg?oh=f7de83493100906db8e5cdb41ef3d190&oe=55D336DA&__gda__=1436502735_d22457014126539a0d961d4a1f382fc1"
+          }
+        }
+      }, 
+      {
+        "name": "Hồ Hiền", 
+        "id": "100000595894263",
+        "mutual":"(9 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/10676369_965601746803013_7114463858774593065_n.jpg?oh=961cbc4f837e32c44a24a995449ec8e2&oe=55D70D12&__gda__=1436884340_da74f179cfda1c02bf6bd44294ef7b93"
+          }
+        }
+      }, 
+      {
+        "name": "Cang Trương Minh", 
+        "id": "100001050241011",
+        "mutual":"(20 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p50x50/10984487_919378604773806_2451215629044186995_n.jpg?oh=580bd7c42fa585f12ab7eaebdc3b1795&oe=55DB2B23&__gda__=1436012936_a744566d7228e0696f36d0fe50bc5de1"
+          }
+        }
+      }, 
+      {
+        "name": "Nguyen Nhu", 
+        "id": "100001379745046",
+        "mutual":"(16 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c8.0.50.50/p50x50/529341_476992382356749_605587588_n.jpg?oh=1a8cca55a2bbec2bbb931c89f735f93d&oe=55E55E20&__gda__=1435988610_0462a4857def083899a305f3a00aa220"
+          }
+        }
+      }, 
+      {
+        "name": "Rotine Lae Sice", 
+        "id": "100001554730984",
+        "mutual":"(7 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": true, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/c15.0.50.50/p50x50/10354686_10150004552801856_220367501106153455_n.jpg?oh=d228993efabaa22da72afab02b5ac521&oe=55D2C32F&__gda__=1440183769_642063dd9d20661edb3c8d2362acfc74"
+          }
+        }
+      }, 
+      {
+        "name": "Buon Lang Tu", 
+        "id": "100001753017749",
+        "mutual":"(6 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p50x50/11129896_798283226906770_4744066971488079389_n.jpg?oh=a0ba68853138fa8e5146b13f965f626c&oe=55A03F30&__gda__=1435982342_f24f035cc90468f0f8db3f25c15a8bc0"
+          }
+        }
+      }, 
+      {
+        "name": "Trâm", 
+        "id": "100001789098869",
+        "mutual":"(45 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p50x50/10364052_790488694354093_6503198303759813437_n.jpg?oh=07ee64b5d682ba8c515c65682f90e31a&oe=55D21861&__gda__=1436323197_097db0cd99e50bdf776aed533dcc7a5b"
+          }
+        }
+      }, 
+      {
+        "name": "Trần Quốc Hùng", 
+        "id": "100001826674876",
+        "mutual":"(38 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.5.50.50/p50x50/10997713_832826313454917_1908472716547301207_n.jpg?oh=b2cb965f85271dc38a2128e31dfd8d15&oe=55E2D81E&__gda__=1439742795_3a9166cc194187033c3df2c3e3832836"
+          }
+        }
+      }, 
+      {
+        "name": "Nhân Trí", 
+        "id": "100002395953568",
+        "mutual":"(26 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c0.6.50.50/p50x50/10462538_690432297713296_2602956407158832074_n.jpg?oh=bad82ac4690092828570bffa8065a7d4&oe=55D782EB&__gda__=1436341205_0c80883b522603a7842c5308fb6a2e76"
+          }
+        }
+      }, 
+      {
+        "name": "Người Hạnh Phúc", 
+        "id": "100002402398182",
+        "mutual":"(17 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p50x50/11081225_825000287590043_2178111137320024132_n.jpg?oh=4f00c6b0a18b0385ec1b558dcb4eb627&oe=55DDC0B1&__gda__=1440190125_f4f04638f492ae1f116e3aac981bf216"
+          }
+        }
+      }, 
+      {
+        "name": "Trần Hoàng Minh Tân", 
+        "id": "541940799241536",
+        "mutual":"(8 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p50x50/10492481_625798654189083_8707003163403534016_n.jpg?oh=52202fb715fd285971003c5e926f2d0e&oe=55D4414E&__gda__=1436058853_9340e88f64c6074d771433c7f80f5431"
+          }
+        }
+      }, 
+      {
+        "name": "Ngoan Le", 
+        "id": "100002846970815",
+        "mutual":"(12 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/11058576_656325367805690_6701643610265119909_n.jpg?oh=b6a4ee6f9c0b3c432abd86751eaf2090&oe=55CF6E75&__gda__=1440506387_9dc13834f7f83015e53dd2fc919edd63"
+          }
+        }
+      }, 
+      {
+        "name": "Hoa Cuagio", 
+        "id": "100003023660570",
+        "mutual":"(31 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p50x50/1508551_680646475379468_8257712512032019855_n.jpg?oh=c2d0fbac632f0b482ec3dc07406aa67e&oe=55E19E98&__gda__=1436053133_c84ecdf2220a5aec614bc3142b33eb26"
+          }
+        }
+      }, 
+      {
+        "name": "Diếp Hoa", 
+        "id": "100003224405109",
+        "mutual":"(16 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.0.50.50/p50x50/10392279_745690922215048_3026327360517484333_n.jpg?oh=052dd16cd3cf0016cd3a2fc66ff8eb08&oe=559AD325&__gda__=1439833456_f1f301d6dd97f428f32c19980a65572b"
+          }
+        }
+      }, 
+      {
+        "name": "Phước Lê", 
+        "id": "100003321400985",
+        "mutual":"(1 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/c43.0.50.50/p50x50/10455916_635918806528827_1396963963950029644_n.jpg?oh=b8aee0c67f6506168b33403251aa51ea&oe=55A5C5CD&__gda__=1440224484_c93d62df799b50b0295c910875dd7de3"
+          }
+        }
+      }, 
+      {
+        "name": "Nguyễn Doãn Phong", 
+        "id": "100003503348262",
+        "mutual":"(3 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": false, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/p50x50/10928994_623965667730206_781045436671561014_n.jpg?oh=b9dc315f89f8ff45dd20669f2cd61016&oe=55E0ED22&__gda__=1436969840_94eee0bb89bbe659348d9c5b6104c59c"
+          }
+        }
+      }, 
+      {
+        "name": "Tai Chu", 
+        "id": "100006333522729",
+        "mutual":"(19 mutuals friends)",
+        "picture": {
+          "data": {
+            "is_silhouette": true, 
+            "url": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/p50x50/1379841_10150004552801901_469209496895221757_n.jpg?oh=da0bbd41fd5e8990b47584511a2e1167&oe=559E0033&__gda__=1440157980_b49e16a47aca7723431ea390c5f3d311"
+          }
+        }
+      }
+    ], 
+    "paging": {
+      "next": "https://graph.facebook.com/v2.3/748553588547964/friends?fields=name,picture&limit=25&offset=25&__after_id=enc_AdDUZCX61ZBXvCBbIemgvGSSmaz9SCsWJe2ine5LRGf7FiuhTaMTjGazd69LewB7FMPzSAeIPGlKYZBYa5r4hs5d0SA"
+    }, 
+    "summary": {
+      "total_count": 531
+    }
+  }, 
+  "id": "748553588547964"
+}
