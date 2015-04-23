@@ -1,4 +1,20 @@
-<style>
+<DOCTYPE !>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style type="text/css">
+    .img{
+      max-width: 36%;
+      margin-right: -3px;
+      margin-top: 1px;
+      border-radius: 1px;
+    }
     .showButton{
         display: none;
         margin-right: 3px;
@@ -16,25 +32,6 @@
         padding: 1px;
         border-radius: 3px;
     }
-    .frame{
-        padding-top: 10px;
-        padding-bottom: 6px;
-        width:254px;
-        /*border: 1px solid black;*/
-        float:left;
-    }
-    .title a{
-        float: right;
-    }
-    .odd{
-        width:4%;
-        border-radius: 0px;
-        /*margin-right: -3px;*/
-    }
-    .even{
-        width:4%;
-        border-radius: 0px;
-    }
     .groupName{
         font-size:12px;
         font-weight: bold;
@@ -43,75 +40,50 @@
         font-size:12px;
         color: rgb(145, 151, 163);
     }
-    .mg{
-      width: 50%;
-      border-radius: 3px;
-      margin: -1px;
+    @media screen and (min-width: 768px) {
+      .asd{
+        margin-left: -40px;
+      }
     }
-    .topImage{
-      margin-bottom: 4px;
+    .pOfGroupName{
+      margin-bottom: 0px;
     }
-</style>
-<div class="frame">
+  </style>
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-8"><p>Group Suggestion</p></div>
-        <div class="col-md-4"><a href="#" >See All</a></div>
+      <div class="col-xs-3">
+        <p style="float:left">Group Suggestion</p>
+        <p style="float:right">
+          <a href="">See All</a>
+        </p>
+      </div>
     </div>
 
-    <div class="row showCloseButton item" >
-        <div class="col-md-3" style="padding-right: 0px; padding-left: 15px;">
-          <div class="topImage">
-            <img class="img-rounded mg" src="images/1.jpg">
-            <img class="img-rounded mg" src="images/2.jpg">
-          </div>
-          <div>
-            <img class="img-rounded mg" src="images/3.jpg">
-            <img class="img-rounded mg" src="images/4.jpg">
-          </div>
-        </div>
-        
-        <div class="col-md-9" >
-          <a href="" title="Delete" id="delete">
-            <span class="glyphicon glyphicon-remove showButton closeButton" aria-hidden="true" ></span>
-          </a>
-          <div>
-            <div>
-                <a href="#">
-                    <div>
-                      <span class="groupName" data-bind="text: groupName">
-                      </span>
-                  </div>
-              </a>
-          </div>
-          <div class="description">
-            Description
-          </div>
-          <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Join</button>
-          </div>
-        </div>
+    <div class="row showCloseButton item">
+      <div class="col-xs-12 col-sm-1">
+        <img src="images/3.jpg" class="img img-rounded">
+        <img src="images/2.jpg" class="img img-rounded">
+        <img src="images/3.jpg" class="img img-rounded">
+        <img src="images/2.jpg" class="img img-rounded">
+      </div>
+      <div class="col-xs-12 col-sm-2 asd">
+        <a href="#" title="Delete" class="delete">  
+          <span class="glyphicon glyphicon-remove showButton closeButton" aria-hidden="true" ></span>
+        </a>
+        <p class="pOfGroupName">
+          <a href="" class="groupName">Group name</a>
+        </p>
+        <p class="description">Description</p>
+        <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Join</button>
+      </div>
     </div>
-    
-    <!-- title of group suggestion -->
-    <div class="title">
-    </div>
-    <!-- title of group suggestion -->
-
-
-    <!-- item 1 in group suggestion-->
-    <div style="float:left">
-        <!-- image of person in group suggestion -->
-        <!-- image of person in group suggestion -->
-        <!-- name of group suggestion -->
-        
-    <!-- name of group suggestion -->
-</div>
-<!-- end item 1 in group suggestion -->
-</div>
-
+  </div>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(.delete).click(function(){
-            $(.item).hide();
-        });
-    });
+  $(function(){
+    $('.delete').on('click', function(){
+       $('.item').hide();
+    })
+  })
 </script>
+</body>
+</html>
