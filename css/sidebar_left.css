@@ -1,70 +1,178 @@
 
-        #friendbox, #photobox, #videobox{
-            background-color: white;
-            margin-top: 50px;
-        }
+#friendbox, #photobox, #videobox, #information{
+    background-color: white;
+    margin-top: 50px;
+}
 
-        #menu, #ptmenu, #vdmenu {
-            height: 33px;
-            background-color: rgba(215, 215, 215, 0.59);
-            padding: 1px 30px;
-        }
+#menu, #ptmenu, #vdmenu, .inf_item, {
+    height: 35px;
+    background-color: rgba(215, 215, 215, 0.59);
+    padding: 1px 30px;
 
-        #leftmenu a,#ptleftmenu a,#vdleftmenu a{
-            position: absolute;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
+}
 
-        #menu1:hover, #ptmenu1:hover, #vdmenu1:hover{
-            color: white;
-            background-color: blue;
-        }
+.inf_item {
+    background-color: white;
+    margin:  5px ;
+}
 
-        div #rightmenu, div #ptrightmenu, div #vdrightmenu{
-            float: right;
-        }
+#leftmenu a, #ptleftmenu a, #vdleftmenu a,{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 
-        div #leftmenu, div #ptleftmenu, div #vdleftmenu{
-            float: left;
-            padding-left: 0px;
-        }
+#menu1:hover, #ptmenu1:hover, #vdmenu1:hover, .bton:hover, #inf1:hover, #inf2:hover, #inf3:hover{
+    color: white;
+    background-color: blue;
+}
 
-        ul{
-            list-style-type: none;
-        }
+div #rightmenu, div #ptrightmenu, div #vdrightmenu, div .righ_item{
+    float: right;
+}
 
-        #tabLeft{
-            background:none;
-            padding: 0px;
-        }
+div #leftmenu, div #ptleftmenu, div #vdleftmenu{
+    margin-left:  10px;
+}
+div #leftmenu, div #ptleftmenu, div #vdleftmenu, div .lef_item{
+    float: left;
+    padding-left: 0px;
+}
 
-        /*
-           override bootstrap
-        */
-        .image.img-thumbnail{
-            height: 104px;
-            padding: 0px;
-        }
-        .col-sm-4{
-            padding: 0px;
-        }
 
-        li .photo{
-            position: relative;
-        }
-        .text
-        {
-            position:absolute;
-            top: 85px;
-            left:5px;
-            color:white;
-            font-size:10px;
-            font-weight:bold;
-        }
-     #friendbox:hover #rightmenu, #photobox:hover #ptrightmenu, #videobox:hover #vdrightmenu {
-            display: block;
-        }
+div .lef_item p{
+    margin: 10px;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+#tabLeft{
+    background:#3278b3;
+    margin-left: 500px;
+    padding: 0px;
+}
+
+li .photo{
+    position: relative;
+}
+.text
+{
+    width: 105px;
+    position:absolute;
+    bottom:2px;
+    left:5px;
+    color:white;
+    font-size:15px;
+    /*font-weight:bold;*/
+}
+
+.text_inf{
+    font-size:13px;
+
+}
+.born{
+    font-size:13px;
+    text-align: center;
+    color: slategrey;
+
+}
+#friendbox:hover #rightmenu, #photobox:hover #ptrightmenu, #videobox:hover #vdrightmenu, #information:hover .righ_item {
+    display: block;
+}
+
+
+.playbutton
+{
+    position:absolute;
+    top: 35px;
+    left:40px;
+    color:white;
+    font-size:30px;
+}
+
+/*Video CSS*/
+.playbutton{
+    display: none;
+}
+
+
+.videoimage:hover .playbutton  {
+    display: block;
+
+}
+
+/*Tooltip*/
+.dropdown {
+    float:left;
+    position:Relative;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.dropdown span{
+    visibility:hidden;
+    opacity:0;
+
+    position:Absolute;
+    top:-25px;
+    left:-100%;
+    white-space:nowrap;
+    font-size:12px;
+    font-family:arial,sans-serif;
+    padding:6px 17px;
+    border-radius:3px;
+    color:white;
+    background-color:#101010;
+    text-shadow:0 1px 0 rgba(0,0,0,0.7);
+    box-shadow:0 1px 1px  rgba(0,0,0,1);
+    /*---animation---*/
+    -moz-transition:top 0.4s,opacity 0.4s ease;
+    -webkit-transition:top 0.4s,opacity 0.4s ease;
+    -o-transition:top 0.4s,opacity 0.4s ease;
+    transition:top 0.4s,opacity 0.4s ease;
+
+}
+
+/*---Tooltip hava a rectangle at bottom---*/
+.dropdown span:after{
+    content:"";
+    width:0;
+    height:0;
+    position:absolute;
+    bottom:-12px;
+    left:48%;
+    border:6px solid transparent;
+    border-top:7px solid #101010;
+}
+
+.dropdown:hover span{
+    visibility:visible;
+    top:-40px;
+    opacity:1;
+}
+
+
+/*
+      override bootstrap
+   */
+.image.img-thumbnail{
+    width: 111px;
+    height: 104px;
+    padding: 0px;
+}
+.col-sm-4{
+    padding: 0px;
+}
+.glyphicon.glyphicon-home,.glyphicon.glyphicon-map-marker {
+    color: grey;
+
+}
+
+
+
