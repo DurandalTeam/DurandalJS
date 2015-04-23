@@ -28,9 +28,9 @@
             //return app.showDialog("Add friend not implement...");
             return app.showMessage("Add friend not implement...");
         },
-        canDeactivate: function () {
+        /*canDeactivate: function () {
             //the router's activator calls this function to see if it can leave the screen
             return app.showMessage('Are you sure you want to leave this page?', 'Navigate', ['Yes', 'No']);
-        }
+        } */
     };
 });
