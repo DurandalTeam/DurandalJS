@@ -6,6 +6,13 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko){
         photos: ko.observableArray([]),
         videos: ko.observableArray([]),
         friends: ko.observableArray([]),
+        fleng: ko.observable(),
+        pleng: ko.observable(),
+        vleng: ko.observable(),
+        school: ko.observable(),
+        lives: ko.observable(),
+        froms: ko.observable(),
+        born: ko.observable(),
 
         activate :function(){
             var that = this;
@@ -15,10 +22,10 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko){
 
             $.getJSON("app/dataModel/information.json", function(infData){
 
-                that.school = infData.education.school.name ;
-                that.lives = infData.location.name ;
-                that.froms = infData.hometown.name ;
-                that.born = infData.birthday ;
+                that.school (infData.education.school.name) ;
+                that.lives (infData.location.name );
+                that.froms (infData.hometown.name );
+                that.born (infData.birthday);
 
             }).error(function(jqXhr, textStatus, error) {
                 alert("ERROR: " + textStatus + ", " + error);
@@ -35,7 +42,7 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko){
                     }
                     videos[j] = videoData.videos.data[j];
                 }
-                that.videos.leng = videoData.videos.data.length ;
+                that.vleng(videoData.videos.data.length);
                 that.videos(videos);
 
             }).error(function(jqXhr, textStatus, error) {
@@ -52,7 +59,7 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko){
                     }
                     photos[i] = photoData.photos.data[i];
                 }
-                that.photos.leng = photoData.photos.data.length ;
+                that.pleng(photoData.photos.data.length);
                 that.photos(photos);
             }).error(function(jqXhr, textStatus, error) {
                 alert("ERROR: " + textStatus + ", " + error);
@@ -69,13 +76,22 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko){
                     }
                     friends[k] = friendData.friends.data[k];
                 }
-
-                that.friends.leng = friendData.friends.data.length ;
+                that.fleng(friendData.friends.data.length);
                 that.friends(friends);
 
             }).error(function(jqXhr, textStatus, error) {
                 alert("ERROR: " + textStatus + ", " + error);
             });
+        },
+        selectPhoto : function(item) {
+            item.viewUrl = 'views/imageDetail';
+            app.showDialog(item);
+        },
+        selectVideo : function(item) {
+            item.viewUrl = 'views/videoDetail';
+            app.showDialog(item);
         }
+
     };
+
 });
