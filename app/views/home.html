@@ -2,7 +2,7 @@
     <div style="height: 20px;">
 
     </div>
-    <div class="col-sm-3 col-md-2">
+    <div class="col-sm-3 col-md-3">
         <div class="panel-group">
             <div class="panel panel-primary">
                 <div class="panel-heading">Apps</div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="col-sm-3 col-md-7">
+    <div class="col-sm-6 col-md-6">
         <div class="panel-group">
             <div class="panel panel-success">
                 <div class="panel-heading">First feed</div>
@@ -69,22 +69,14 @@
     <div class="col-sm-3 col-md-3">
         <div class="panel-group">
             <div class="panel panel-info">
-                <div class="panel-heading">FRIEND REQUESTS</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-search"></span>
-                    Games
+                <div class="panel-heading col-md-12">
+                    PEOPLE YOU MAY KNOW
+                    <a style="float: right" href="#"><span style="font-size: 10px">See all</span></a>
                 </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-envelope"></span>
-                    On this day
-                </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-print"></span>
-                    Dragon City
-                </div>
+                <div class="panel-body" data-bind="compose:'viewmodels/friendsuggestion'"></div>
             </div>
             <div class="panel panel-info">
-                <div class="panel-heading">PEOPLE YOU MAY KNOW</div>
+                <div class="panel-heading">APPs SUGGESTION</div>
                 <div class="panel-body">
                     <span class="glyphicon glyphicon-search"></span>
                     New Group

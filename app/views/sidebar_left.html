@@ -1,176 +1,148 @@
-<!--<div class="background">-->
 
-    <div id="tabLeft"  class="col-sm-3">
-
-        <div id="friendbox" class="col-sm-12" style="padding:0">
-            <div id="menu"  style="margin: 0">
-                    <div id="leftmenu" >
-                        <a href="#"></a>
-                        <h5><b data-bind="text:displayName"></b> <span> - 150</span></h5>
-                    </div>
-                    <div id="rightmenu"  hidden>
-                        <div class="dropdown">
-                            <button class="btn btn-sm dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="bottom" title="Chỉnh sửa" data-toggle="dropdown"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản lý các phần</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chỉnh sửa quyền riêng tư</a></li>
-                            </ul>
-                        </div>
-                    </div>
-            </div>
-
-            <div class="images col-sm-12" style=" padding: 0">
-                <ul class="photo" style=" padding: 0">
-                    <!--Image 1-->
-                    <a href="#">
-                        <li  class="col-sm-4" >
-                            <img src="app/Images/Photo1.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 1</span>
-                        </li>
-                    </a>
-                    <!--Image 2-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo2.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 2</span>
-                        </li>
-                    </a>
-                    <!--Image 3-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo3.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 3</span>
-                        </li>
-                    </a>
-
-                    <!--Image 4-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo4.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 4</span>
-                        </li>
-                    </a>
-                    <!--Image 5-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo5.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 5</span>
-                        </li>
-                    </a>
-                    <!--Image 6-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo6.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 6</span>
-                        </li>
-                    </a>
-                    <!--Image 7-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo7.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 7</span>
-                        </li>
-                    </a>
-                    <!--Image 3-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo8.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 8</span>
-                        </li>
-                    </a>
-                    <!--Image 9-->
-                    <a href="#">
-                        <li class="col-sm-4" >
-                            <img src="app/Images/Photo9.jpg" class="image img-thumbnail" >
-                            <span class="text">Nguyễn Văn 9</span>
-                        </li>
-                    </a>
-                </ul>
+<div id="information" class="col-sm-12 navbar navbar-default " style="padding:0">
+    <div class="inf_item "  style="padding: 0">
+        <div class="lef_item" style=" width: 85%" >
+            <p class="text_inf "><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Student at: <span  data-bind="text:school" ></span></p>
+        </div>
+        <div id="right1" class="righ_item"  hidden  style=" width: 15%">
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="inf1"   data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
             </div>
         </div>
-
-
-        <div id="photobox" class="col-sm-12" style="padding:0">
-            <div id="ptmenu" style="margin: 0">
-                <div id="ptleftmenu">
-                    <a href="#"></a>
-                    <h5><b>PHOTOS</b> <span> - 150</span></h5>
-                </div>
-                <div id="ptrightmenu" hidden>
-                    <div class="dropdown">
-                        <button class="btn btn-sm dropdown-toggle" type="button" id="ptmenu1" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="bottom" title="Chỉnh sửa" data-toggle="dropdown" ></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản lý các phần</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Xem ảnh bị ẩn khỏi dòng thời gian</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="images col-sm-12" style=" padding: 0">
-                <ul class="photo" style=" padding: 0">
-                    <li class="col-sm-4" ><img src="app/Images/Photo1.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo2.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo3.jpg" class="image img-thumbnail" ></li>
-
-                    <li class="col-sm-4" ><img src="app/Images/Photo4.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo5.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo6.jpg" class="image img-thumbnail" ></li>
-
-                    <li class="col-sm-4" ><img src="app/Images/Photo7.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo8.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo9.jpg" class="image img-thumbnail" ></li>
-                </ul>
+    </div>
+    <div class="inf_item "  style="padding: 0">
+        <div class="lef_item" style=" width: 85%" >
+            <p class="text_inf"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Lives in: <span  data-bind="text:lives" ></span></p>
+        </div>
+        <div id="right2" class="righ_item"  style=" width: 15%"  hidden>
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="inf2"   data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
             </div>
         </div>
+    </div>
 
-
-
-        <div id="videobox" class="col-sm-12" style="padding:0">
-            <div id="vdmenu"style="margin: 0">
-                <div id="vdleftmenu">
-                    <a href="#"></a>
-                    <h5><b>VIDEOS</b> <span> - 150</span></h5>
-                </div>
-                <div id="vdrightmenu" hidden>
-                    <div class="dropdown">
-                        <button class="btn btn-sm dropdown-toggle" type="button" id="vdmenu1" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="bottom" title="Chỉnh sửa" data-toggle="dropdown" ></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản lý các phần</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ẩn mục</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nhật ký hoạt động</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="inf_item "  style="padding: 0">
+        <div class="lef_item" style=" width: 85%">
+            <p class="text_inf"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;From: <span  data-bind="text:froms" ></span></p>
+            <p style="margin-top: -10px" class="born">Born on: <span  data-bind="text:born" ></span></p>
+        </div>
+        <div id="right3" class="righ_item" style=" width: 15%"  hidden>
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="inf3"   data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div class="images col-sm-12" style=" padding: 0">
-                <ul class="photo" style=" padding: 0">
 
-                    <li class="col-sm-4" ><img src="app/Images/Photo1.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo2.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo3.jpg" class="image img-thumbnail" ></li>
 
-                    <li class="col-sm-4" ><img src="app/Images/Photo4.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo5.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo6.jpg" class="image img-thumbnail" ></li>
 
-                    <li class="col-sm-4" ><img src="app/Images/Photo7.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo8.jpg" class="image img-thumbnail" ></li>
-                    <li class="col-sm-4" ><img src="app/Images/Photo9.jpg" class="image img-thumbnail" ></li>
+<div id="friendbox" class="col-sm-12 navbar navbar-default" style="padding:0">
+    <div id="menu"  style="margin: 0">
+        <div id="leftmenu" >
+            <a href="#"></a>
+            <h5><b>Friends</b> - <span  data-bind="text:fleng" ></span></h5>
+        </div>
+
+        <div id="rightmenu"  hidden>
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản lý các phần</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chỉnh sửa quyền riêng tư</a></li>
                 </ul>
             </div>
         </div>
     </div>
-<!--</div>-->
+
+    <div class="images col-sm-12" style=" padding: 0">
+
+        <ul class="photo" style=" padding: 0" data-bind="foreach: friends">
+            <a data-bind="attr: { href: link}">
+                <li class="col-sm-4" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
+                    <span class="text" data-bind="text:name"></span>
+                </li>
+
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+<div id="photobox" class="col-sm-12 navbar navbar-default" style="padding:0">
+    <div id="ptmenu" style="margin: 0">
+        <div id="ptleftmenu">
+            <a href="#"></a>
+            <h5><b>PHOTOS</b> - <span  data-bind="text:pleng" ></span></h5>
+        </div>
+        <div id="ptrightmenu" hidden>
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="ptmenu1" data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="images col-sm-12" style=" padding: 0">
+        <ul class="photo" style=" padding: 0" data-bind="foreach: photos">
+            <a href="#" data-bind="click:$parent.selectPhoto">
+                <li class="col-sm-4" ><img data-bind="attr: { src: images }" class="image img-thumbnail" ></li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+
+<div id="videobox" class="col-sm-12 navbar navbar-default" style="padding:0">
+    <div id="vdmenu"style="margin: 0">
+        <div id="vdleftmenu">
+            <a href="#"></a>
+            <h5><b>VIDEOS</b> - <span data-bind="text: vleng"></span></h5>
+        </div>
+        <div id="vdrightmenu" hidden>
+            <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" id="vdmenu1" data-toggle="dropdown">
+                    <div class="glyphicon glyphicon-pencil"></div>
+                    <span>Edit</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản lý các phần</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ẩn mục</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nhật ký hoạt động</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="images col-sm-12" style=" padding: 0">
+        <ul class="photo" style=" padding: 0" data-bind="foreach: videos">
+            <a href="#" data-bind="click:$parent.selectVideo">
+                <li class="col-sm-4 videoimage" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
+                    <div  class="playbutton">
+                        <span class="glyphicon glyphicon-play-circle"></span>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>
 
 
 
