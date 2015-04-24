@@ -1,119 +1,40 @@
-﻿<style type="text/css">
-.img{
-  max-width: 36%;
-  margin-right: -3px;
-  margin-top: 1px;
-  border-radius: 1px;
-}
-.showButton{
-  display: none;
-  margin-right: 3px;
-}
-  /*.showCloseButton:hover .showButton{
-    display : block;
-    }*/
-    .closeButton {
-      float: right;
-      font-size: 11px;
-    }
-    .closeButton:hover {
-      color: white;
-      background-color: #6B89B6;
-      padding: 1px;
-      border-radius: 3px;
-    }
-    .groupName{
-      font-size:12px;
-      font-weight: bold;
-    }
-    .description{
-      font-size:12px;
-      color: rgb(145, 151, 163);
-    }
-    @media screen and (min-width: 768px) {
-      .asd{
-        margin-left: -40px;
-      }
-    }
-    @media screen and (min-width: 200px) {
-      .asd{
-        margin-left: -30px;
-      }
-    }
-    .pOfGroupName{
-      margin-bottom: 0px;
-    }
-    </style>
-    <div class="container">
-      <div style="height: 20px;">
+﻿<div class="container">
+    <div style="height: 20px;">
 
-      </div>
-      <div class="col-sm-3 col-md-3">
+    </div>
+    <div class="col-sm-3 col-md-2">
         <div class="panel-group">
-          <div class="panel panel-primary">
-            <div class="panel-heading">Apps</div>
-            <div class="panel-body">
-              <span class="glyphicon glyphicon-search"></span>
-              Games</div>
-              <div class="panel-body">
-                <span class="glyphicon glyphicon-envelope">
-                  On this day</div>
-                  <div class="panel-body">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Apps</div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Games</div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-envelope">
+                    On this day</div>
+                <div class="panel-body">
                     <span class="glyphicon glyphicon-print"></span>
                     Dragon City</div>
-                  </div>
-                  <div class="panel panel-primary">
-                    <div class="panel-heading">GROUPS</div>
-                    <div class="panel-body">
-                      <span class="glyphicon glyphicon-search"></span>
-                      New Group
-                    </div>
-                    <div class="panel-body">
-                      <span class="glyphicon glyphicon-envelope"></span>
-                      UC Client
-                    </div>
-                    <div class="panel-body">
-                      <span class="glyphicon glyphicon-print"></span>
-                      Create Group
-                    </div>
-                  </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">GROUPS</div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-search"></span>
+                    New Group
                 </div>
-              </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    UC Client
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-print"></span>
+                    Create Group
+                </div>
+            </div>
+        </div>
+    </div>
 
-<<<<<<< HEAD
-              <div class="col-sm-6 col-md-6">
-                <div class="panel-group">
-                  <div class="panel panel-success">
-                    <div class="panel-heading">First feed</div>
-                    <div class="panel-body">
-                      <span class="glyphicon glyphicon-search"></span>
-                      Games</div>
-                      <div class="panel-body">
-                        <span class="glyphicon glyphicon-envelope">
-                          On this day</div>
-                          <div class="panel-body">
-                            <span class="glyphicon glyphicon-print"></span>
-                            Dragon City</div>
-                          </div>
-                          <div class="panel panel-success">
-                            <div class="panel-heading">Second feed</div>
-                            <div class="panel-body">
-                              <span class="glyphicon glyphicon-search"></span>
-                              New Group
-                            </div>
-                            <div class="panel-body">
-                              <span class="glyphicon glyphicon-envelope"></span>
-                              UC Client
-                            </div>
-                            <div class="panel-body">
-                              <span class="glyphicon glyphicon-print"></span>
-                              Create Group
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-=======
-    <div class="col-sm-6 col-md-6">
+    <div class="col-sm-3 col-md-7">
         <div class="panel-group">
             <div class="panel panel-success">
                 <div class="panel-heading">First feed</div>
@@ -129,95 +50,54 @@
             </div>
             <div class="panel panel-success">
                 <div class="panel-heading">Second feed</div>
-                <div data-bind="foreach: feeds">
-                    <div style="width: 100%; min-height:40px; height: auto;">
-                        <div style="float: left; width: 10%; height: 40px;">
-                            <img style="height: 100%; border-radius: 0px;" src="./image/my-pic.jpg" class="img-rounded"/>
-                        </div>
-                        <div style="float: left; width: 65%; height: 100%">
-                            <a href="#" data-bind="text: from.name"></a><br/>
-                        </div>
-                    </div>
-                    <div style="width: 100%; min-height:40px; height: auto;">
-                        <div style="float: left; width: 100%; height: 100%;">
-                            <div>
-                                <p data-bind="text: message">
-                                    <!--Relax cuoi tuan nao!!! :D-->
-                                </p>
-                            </div>
-                            <div style="float: left; width: 100%; height: 376px;">
-                                <img style="width: 100%; height: 100%; border-radius: 0px;" data-bind="attr:{src: picture}" class="img-rounded"/>
-                            </div>
-                            <div>
-                                <a href="#">Like</a> · 
-                                <a href="#">Comment</a> · 
-                                <a href="#">Share</a>
-                            </div>
-                            <div>
-                                <div style="float: left; width: 10%; height: 40px;">
-                                    <img style="height: 100%; border-radius: 0px;" src="./image/my-pic.jpg" class="img-rounded"/>
-                                </div>
-                                <div style="float: left; width: 90%; height: 40px;">
-                                    <input style="width: 100%; height: 100%;" type="text" placeholder="Write a comment..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-search"></span>
+                    New Group
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    UC Client
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-print"></span>
+                    Create Group
                 </div>
             </div>
         </div>
     </div>
->>>>>>> origin/master
 
-                      <div class="col-sm-3 col-md-3">
-                        <div class="panel-group">
-                          <div class="panel panel-info">
-                            <!-- <div class="container-fluid"> -->
-                              <div class="row">
-                                <div class="col-xs-12">
-                                  <p style="float:left">Group Suggestion</p>
-                                  <p style="float:right">
-                                    <a href="">See All</a>
-                                  </p>
-                                </div>
-                              </div>
-
-                              <div class="showCloseButton item" data-bind="foreach: groups">
-                                <div class="row">
-                                  <div class="col-xs-5 col-sm-4" >
-                                    <img data-bind="attr{src:picture.data.url}" class="img img-rounded">
-                                    <img data-bind="attr{src:picture.data.url}" class="img img-rounded">
-                                    <img data-bind="attr{src:picture.data.url}" class="img img-rounded">
-                                    <img data-bind="attr{src:picture.data.url}" class="img img-rounded">
-                                  </div>
-
-                                  <div class="col-xs-7 col-sm-8 asd">
-                                    <a href="#" title="Delete" class="delete"> 
-                                      <span class="glyphicon glyphicon-remove showButton closeButton" aria-hidden="true" ></span>
-                                    </a>
-                                    <p class="pOfGroupName">
-                                      <a href="" class="groupName" data-bind="text: name"></a>
-                                    </p>
-                                    <p class="description" data-bind="text: member_request_count"></p>
-                                    <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Join</button>
-                                  </div>
-                                </div>
-                              </div>
-                            <!-- </div> -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <script type="text/javascript">
-                    $(document).ready(function(){
-                      $(".delete").click(function(){
-                        $(".item").hide();
-                      });
-                      $(".item").mouseover(function(){
-                        $(".showButton").show();
-                      });
-                      $(".item").mouseout(function(){
-                        $(".showButton").hide();
-                      })
-                    });
-                    </script>
+    <div class="col-sm-3 col-md-3">
+        <div class="panel-group">
+            <div class="panel panel-info">
+                <div class="panel-heading">FRIEND REQUESTS</div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Games
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    On this day
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-print"></span>
+                    Dragon City
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">PEOPLE YOU MAY KNOW</div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-search"></span>
+                    New Group
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    UC Client
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-print"></span>
+                    Create Group
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
