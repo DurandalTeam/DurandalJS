@@ -46,7 +46,7 @@
     padding-bottom: 1px;
 }*/
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
     .navbar-header {
         float: none;
     }
