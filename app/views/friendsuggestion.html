@@ -4,7 +4,7 @@
             <img style="border-radius: 0px" class="img-rounded" data-bind="attr:{src: picture.data.url} ">
         </div>
         <div class="col-md-8">
-            <a data-bind="text: name"></a><br>
+            <a target="_blank" data-bind="text: name,attr: { href: link}">Tesst</a><br>
             <small data-bind="text: mutual"></small><br>
             <button class="btn btn-default btn-xs" data-bind="click:$parent.search">
                 <span class="glyphicon glyphicon-plus"></span> Add friends
