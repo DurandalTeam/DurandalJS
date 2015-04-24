@@ -8,8 +8,8 @@
         },
         activate: function () {
             router.map([
-                { route: '', title:'Time Line', moduleId: 'viewmodels/timeline', nav: true },
-                { route: 'Home', moduleId: 'viewmodels/home', nav: true },
+                { route: '', title:'Home', moduleId: 'viewmodels/home', nav: true },
+                { route: 'Timeline', moduleId: 'viewmodels/timeline', nav: true },
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
                 { route: 'feed', moduleId: 'viewmodels/feed', nav: true }
             ]).buildNavigationModel();
