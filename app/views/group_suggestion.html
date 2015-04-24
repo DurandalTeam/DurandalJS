@@ -43,10 +43,17 @@
   .pOfGroupName{
     margin-bottom: 0px;
   }
+  .panel-heading{
+    color: #31708F;
+    background-color: #D9EDF7;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+  }
 </style>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12">
+  <div class="row ">
+    <div class="col-xs-12 panel-heading">
       <p style="float:left">Group Suggestion</p>
       <p style="float:right">
         <a href="">See All</a>
@@ -54,7 +61,7 @@
     </div>
   </div>
 
-  <div class="showCloseButton item" data-bind="foreach: groups">
+  <div class="showCloseButton item panel-body" data-bind="foreach: groups">
     <div class="row">
       <div class="col-xs-5 col-sm-4" >
         <img data-bind="attr{src:picture.data.url}" class="img img-rounded">
