@@ -11,9 +11,6 @@
                 { route: '', title:'Time Line', moduleId: 'viewmodels/timeline', nav: true },
                 { route: 'Home', moduleId: 'viewmodels/home', nav: true },
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
-                { route: 'friend_suggestion', moduleId: 'viewmodels/friendsuggestion', nav: true },
-                { route: 'sidebar_left', moduleId: 'viewmodels/sidebar_left', nav: true },
-                { route: 'group_suggestion', moduleId: 'viewmodels/group_suggestion', nav: true },
                 { route: 'feed', moduleId: 'viewmodels/feed', nav: true }
             ]).buildNavigationModel();
             
