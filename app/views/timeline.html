@@ -2,39 +2,12 @@
     <div style="height: 20px;">
 
     </div>
-    <div class="col-sm-3 col-md-2">
-        <div class="panel-group">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Apps</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-search"></span>
-                    Games</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-envelope">
-                    On this day</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-print"></span>
-                    Dragon City</div>
-            </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">GROUPS</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-search"></span>
-                    New Group
-                </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-envelope"></span>
-                    UC Client
-                </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-print"></span>
-                    Create Group
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- sidebar left -->
+    <div id="tabLeft" class="col-sm-3"  data-bind="compose:'viewmodels/sidebar_left'" ></div>
+    <!-- end side bar left -->
 
-    <div class="col-sm-3 col-md-7">
+
+    <div class="col-sm-6 col-md-6">
         <div class="panel-group">
             <div class="panel panel-success">
                 <div class="panel-heading">First feed</div>
@@ -69,23 +42,15 @@
     <div class="col-sm-3 col-md-3">
         <div class="panel-group">
             <div class="panel panel-info">
-                <div class="panel-heading">FRIEND REQUESTS</div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-search"></span>
-                    Games
+                <div class="panel-heading col-md-12">
+                    PEOPLE YOU MAY KNOW
+                    <a style="float: right" href="#"><span style="font-size: 9px">See all</span></a>
                 </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-envelope"></span>
-                    On this day
-                </div>
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-print"></span>
-                    Dragon City
-                </div>
+                <div class="panel-body" data-bind="compose:'/viewmodels/friendsuggestion'"></div>
             </div>
             <div class="panel panel-info">
                 <div>
-                  <div data-bind="compose:'/group_suggestion.html'"></div>
+                  <div data-bind="compose:'viewmodels/group_suggestion'"></div>
                 </div>
                 <!-- <div class="panel-heading">PEOPLE YOU MAY KNOW</div>
                 <div class="panel-body">
