@@ -1,5 +1,96 @@
 
-#friendbox, #photobox, #videobox, #information{
+#bottomGroup, #bottomApp{
+         margin-top:10px;
+         margin-bottom:10px
+     }
+.bottomInf{
+    margin-left: 20px;
+}
+
+.bottomGr:hover{
+    background-color: silver;
+}
+
+
+.icon-home{
+    width: 15px;
+    height: 15px;
+    margin-top: -3px;
+
+}
+
+#btRigt1, #btRigt2, #btRigt3{
+    margin: 0;
+}
+#btRigt1:hover, #btRigt2:hover, #btRigt3:hover{
+
+    background-color: silver;
+}
+
+
+/*a tag*/
+
+#app a:link,#group a:link,#group2 a:link {
+    text-decoration: none;
+}
+#app a:visited,#group a:visited,#group2 a:visited{
+    text-decoration: none;
+}
+#app a:active,#group a:active,#group2 a:active{
+    text-decoration: none;
+}
+
+#tabLeft-home a{
+    color: black;
+}
+
+/*#tabLeft-home a:hover{*/
+    /*color: blue;*/
+/*}*/
+/*Information*/
+
+#topInfImg img{
+    width: 50px;
+    height: 50px;
+
+    margin-right: 5px;
+    padding: 0px;
+}
+#topInfText{
+
+    margin-top: 15px;
+}
+
+
+/*Group*/
+/*#group{*/
+/*margin-top: 20px;*/
+/*width: 200px;*/
+/*}*/
+#group img,   #app img{
+    width: 20px;
+    height: 20px;
+}
+#groupHeader-group span, #groupHeader-app span{
+    margin-left: 10px;
+    display: none;
+    float: right;
+}
+
+#group:hover #groupAll,#app:hover #groupAll2 {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+#friendbox, #photobox, #videobox, #information, #group1, #app, #group2, #group{
     background-color: white;
 
 }
@@ -52,7 +143,7 @@ ul{
     list-style-type: none;
 }
 
-#tabLeft{
+#tabLeft, #tabLeft-home{
     background:#E9EAED;
     padding: 0px;
 }
@@ -107,14 +198,14 @@ li .photo{
 }
 
 /*Tooltip*/
-.dropdown {
+#tabLeft .dropdown {
     float:left;
     position:Relative;
     margin-left:10px;
     margin-right:10px;
 }
 
-.dropdown span{
+#tabLeft .dropdown span{
     visibility:hidden;
     opacity:0;
 
@@ -139,7 +230,7 @@ li .photo{
 }
 
 /*---Tooltip hava a rectangle at bottom---*/
-.dropdown span:after{
+#tabLeft .dropdown span:after{
     content:"";
     width:0;
     height:0;
@@ -150,7 +241,7 @@ li .photo{
     border-top:7px solid #101010;
 }
 
-.dropdown:hover span{
+#tabLeft .dropdown:hover span{
     visibility:visible;
     top:-40px;
     opacity:1;
@@ -160,12 +251,12 @@ li .photo{
 /*
       override bootstrap
    */
-.image.img-thumbnail{
+#tabLeft .image.img-thumbnail{
     width: 111px;
     height: 104px;
     padding: 0px;
 }
-.col-sm-4{
+#tabLeft .col-sm-4{
     padding: 0px;
 }
 .glyphicon.glyphicon-home,.glyphicon.glyphicon-map-marker {
@@ -173,7 +264,7 @@ li .photo{
 
 }
 
- #tabLeft .navbar {
+#tabLeft .navbar {
 
     background: -webkit-linear-gradient(white, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ffffff, #ffffff); /* For Opera 11.1 to 12.0 */
@@ -182,7 +273,16 @@ li .photo{
     filter: none;
 }
 
- /*photo detail*/
+#tabLeft-home .navbar {
+    border: none;
+    background: -webkit-linear-gradient(#E9EAED, #E9EAED); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E9EAED, #E9EAED); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E9EAED, #E9EAED); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E9EAED, #E9EAED); /* Standard syntax (must be last) */
+    filter: none;
+}
+
+/*photo detail*/
 #popupimage{
     width: 800px;
     height: auto;
@@ -234,8 +334,3 @@ li .photo{
     height: 500px;
     float: right;
 }
-
-/*video{*/
-    /*height: 350px;*/
-    /*width: 600px;*/
-/*}*/
