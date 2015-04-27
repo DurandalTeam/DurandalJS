@@ -21,7 +21,8 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
             // get the random obj and next of its
             group_suggestion[0] = datalocal.groups.data[x];
             group_suggestion[1] = datalocal.groups.data[x+1];
-            
+            group_suggestion[0].member_request_count = group_suggestion[0].member_request_count + " Member";
+            group_suggestion[1].member_request_count = group_suggestion[1].member_request_count + " Member";
 
             // set group_suggestion = observableArray groups
             that.groups(group_suggestion);
