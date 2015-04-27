@@ -1,0 +1,84 @@
+<style type="text/css">
+  @media screen and (max-width: 768px){
+    .pSmallScreen{
+      display: none;
+    }
+    .imgSmallScreen{
+      max-width: 45px;
+      float:none;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .imgMediumScreen{
+      max-width: 50px;
+      float:left;
+    }
+  }
+  .listFriend{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 3px;
+  }
+  .imgInChat{
+    margin-right: 5px;
+  }
+  .created_time{
+    float:right;
+  }
+</style>
+<div class="container" style="width=1200px">
+    <div id="notification" class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <a href="">Inbox</a> - <a href="">other</a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-9">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <p style="float:right" data-bind="text:fiend"></p>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3" style="overflow: scroll; height: 87vh;">
+        <div data-bind="foreach: listFriend">
+          <div class="listFriend" style="overflow: hidden; height: 55px;">
+            <img src="./image/avar.jpg" class="img-rounded imgSmallScreen imgMediumScreen">
+            <a href="", data-bind="click:$parent.select">
+              <p data-bind="text: name" class="pSmallScreen" style="margin-left:5px"></p>  
+            </a>
+            <p data-bind="text: last_message" class="pSmallScreen"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-9 col-sm-9 col-md-9" style="padding-top: 5px;">
+        <div style="; overflow: scroll; height: 78vh;">
+          <div data-bind="foreach: listComment">
+          <img src="./image/avar.jpg" style="float:left; width: 50px;" class="img-rounded imgInChat">
+            <p><strong data-bind="text: from.name"></strong></p><p data-bind="text: created_time" class="created_time"></p>
+            
+            <p data-bind="text: message"></p>
+          </div>
+        </div>
+        <form class="bs-example bs-example-form" data-example-id="input-group-sizing">
+            <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon3">@</span>
+            <input class="form-control" placeholder="Username" aria-describedby="sizing-addon3" type="text">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

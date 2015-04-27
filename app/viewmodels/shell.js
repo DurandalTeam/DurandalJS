@@ -30,7 +30,8 @@
                 //{ route: 'friend_suggestion', moduleId: 'viewmodels/friendsuggestion', nav: true },
                 //{ route: 'sideBar_left_home', moduleId: 'viewmodels/sideBar_left_home', nav: true },
                 //{ route: 'group_suggestion', moduleId: 'viewmodels/group_suggestion', nav: true },
-                { route: 'feed', moduleId: 'viewmodels/feed', nav: true }
+                { route: 'feed', moduleId: 'viewmodels/feed', nav: true },
+                { route: 'message', moduleId: 'viewmodels/chatmessage', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
