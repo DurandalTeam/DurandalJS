@@ -1,10 +1,18 @@
 
-#bottomGroup, #bottomApp{
-         margin-top:10px;
-         margin-bottom:10px
-     }
 .bottomInf{
     margin-left: 20px;
+
+
+}
+.bottomGr{
+    margin-top:5px;
+    display: inline;
+
+}
+.item-bottomGr{
+    font-size:12px;
+    text-align: left;
+    margin-top: 5px
 }
 
 .bottomGr:hover{
@@ -87,10 +95,12 @@
 
 
 
+#group1{
+    margin-top: -15px;
+}
 
 
-
-#friendbox, #photobox, #videobox, #information, #group1, #app, #group2, #group{
+#friendbox, #photobox, #videobox, #information{
     background-color: white;
 
 }

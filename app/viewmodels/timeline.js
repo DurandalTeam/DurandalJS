@@ -1,10 +1,28 @@
 ﻿define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, app, ko, $){
     return{
         groups: ko.observableArray([]),
+        photo: ko.observable(),
+        coverPhoto: ko.observable(),
+        myname: ko.observable(),
 
         activate :function(){
 
           var that = this;
+
+
+           $.getJSON("app/dataModel/information.json", function(infData){
+
+                that.photo (infData.photo) ;
+                that.coverPhoto (infData.coverPhoto );
+                that.myname (infData.name );
+              
+            }).error(function(jqXhr, textStatus, error) {
+                alert("ERROR: " + textStatus + ", " + error);
+            });
+
+
+
+
 
           $.getJSON('app/dataModel/groups.json', function(datalocal){
             var group_suggestion = [];

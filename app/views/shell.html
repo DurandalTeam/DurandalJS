@@ -29,7 +29,12 @@
                         </div>
                     </form>
                 </div>
-
+                
+           <!--       <ul class="nav navbar-nav navbar-right" style="padding-left: 50px">
+                    <li>
+                        <a style="color:#ffffff;">aaaaaaaa</a>
+                    </li>
+                </ul> -->
                 <ul class="nav navbar-nav navbar-right" data-bind="foreach: router.navigationModel">
                     <li data-bind="css: { active: isActive }">
                         <a data-bind="attr: { href: hash }, text: title" style="color:#ffffff;"></a>
@@ -39,6 +44,7 @@
             </div>
 
 
+        </div>
     </nav>
 
     <div class="page-host" data-bind="router: { transition:'entrance' }"></div>

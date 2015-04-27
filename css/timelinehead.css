@@ -1,0 +1,193 @@
+/*Cover*/
+#headerTimeLine{
+
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #E9EAED;
+}
+
+#coverImage{
+    height: 350px;
+    z-index: 0;
+}
+
+#coverIcon .glyphicon-camera
+{
+    position:absolute;
+    top: 32px;
+    left:70px;
+    color: white;
+    text-shadow:0px 0px 10px black;
+    font-size:30px;
+    opacity:1;
+    display: block;
+    z-index: 2;
+    display: block;
+    /*animation*/
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+#headerTimeLine img{
+    position: relative;
+}
+
+#coverIcon .glyphicon-camera:hover{
+    font-size:25px;
+}
+
+
+#coverText{
+    position:absolute;
+    top: 30px;
+    left:60px;
+    color:white;
+    padding-left: 40px;
+    padding-top: 5px;
+    width: 145px;
+    height: 30px;
+    font-size: 12px;
+    font-weight:bold;
+    border-color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 1;
+    opacity: 0.8;
+    display: none;
+}
+
+#uploadCover:hover #coverText{
+    display: block;
+}
+
+/* Bar*/
+.coverBar{
+    clear:both;
+    /*background-color: none;*/
+    /*width:862px;*/
+
+}
+/*Avatar*/
+#avatar img{
+    width:150px;
+    height:150px;
+    top: -125px;
+    margin-bottom:10px;
+    float:left;
+}
+#avatarIcon .glyphicon-camera
+{
+    position:absolute;
+    top: -10px;
+    left: 30px;
+    color: white;
+    text-shadow:0px 0px 10px black;
+    font-size:30px;
+    opacity:1;
+    display: block;
+    z-index: 2;
+    display: block;
+    /*animation*/
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+#avatarIcon .glyphicon-camera:hover{
+    font-size:25px;
+}
+#avatarText{
+    position:absolute;
+    top: -18px;
+    left: 20px;
+    color:white;
+    padding-left: 40px;
+    padding-top: 5px;
+    width: 0px;
+    height: 0px;
+    font-size: 12px;
+    font-weight:bold;
+    border-color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 1;
+    opacity: 0.8;
+    display: none;
+}
+
+#uploadAvatar:hover #avatarText{
+    display: block;
+    width: 140px;
+    height: 53px;
+}
+
+/*a tag*/
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+#bottomCover{
+    float: right;
+}
+#bottomCover a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+
+/*Bottom cover*/
+#bottomCover{
+
+    position:absolute ;
+    top:290px;
+    padding: 0;
+    margin-left:190px;
+
+}
+
+@media screen and (max-width: 600px) {
+    #bottomCover {
+       visibility: hidden;
+    }
+}
+
+
+#headerTimeLine .navbar {
+    border: none;
+    background: -webkit-linear-gradient(#ffffff, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffffff, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffffff, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #ffffff); /* Standard syntax (must be last) */
+    filter: none;
+}
+
+
+
+#userCover{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight:bold;
+
+}
+
+
+
+
+#coverBar .navbar-default .navbar-nav > li > a:hover {
+    background-color: #696969;
+    color: white;
+}
+
+#coverBar .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #696969;
+    color: white;
+}
+
+#coverBar .navbar-default .navbar-nav > .active  > a{
+    background-color: #E9EAEF;
+}
