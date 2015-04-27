@@ -4,6 +4,7 @@
         photo: ko.observable(),
         coverPhoto: ko.observable(),
         myname: ko.observable(),
+        fleng: ko.observable(),
 
         activate :function(){
 
@@ -20,6 +21,12 @@
                 alert("ERROR: " + textStatus + ", " + error);
             });
 
+            $.getJSON("app/dataModel/friends.json", function(friendData){
+                that.fleng(friendData.friends.data.length);
+
+            }).error(function(jqXhr, textStatus, error) {
+                alert("ERROR: " + textStatus + ", " + error);
+            });
 
 
 

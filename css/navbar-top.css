@@ -23,14 +23,31 @@
 .navbar-default .navbar-nav > .active > a:hover {
     background-color: darkblue;
 }
-.img_cover:hover{
-    background-color: darkblue;
-    border-radius:5px;
-}
+
 
 .navbar-default .navbar-nav > .active  > a,
 .navbar-default .navbar-nav > .active > a:focus{
     background-color: #4c68a1;
+}
+
+.img_cover{
+    margin-right: 15px;
+    margin-top: 8px; 
+    padding:5px 5px 5px 5px;
+}
+
+.img_cover > li > a > img{
+   padding:0; 
+   width: 25px; 
+   height: 25px;
+}
+.img_cover > li > a > span{
+    color: white;
+}
+
+.img_cover:hover{
+    background-color: darkblue;
+    border-radius:5px;
 }
 
 
@@ -90,10 +107,17 @@
 }
 
 
+#iconTop{
+    margin-left:30px;
+}
+#iconTop .icontop-item{
+   margin-left:10px; opacity:0.5;
+}
 
 #iconTop .fa{
     color: #23355B;
 }
+
 #iconTop .fa:active{
     color:white;
 
