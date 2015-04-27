@@ -29,15 +29,32 @@
                         </div>
                     </form>
                 </div>
-                
+        
            <!--       <ul class="nav navbar-nav navbar-right" style="padding-left: 50px">
                     <li>
                         <a style="color:#ffffff;">aaaaaaaa</a>
                     </li>
                 </ul> -->
+
+                <ul id="iconTop" class="nav navbar-nav navbar-right" style="margin-left:30px;">
+                    <li class="fa fa-users fa-2x" style="margin-left:10px; opacity:0.5;" onmouseover="style='margin-left:10px; opacity: 1;'" onmouseout=" style='margin-left:10px; opacity: 0.5;'"></li>
+                    <li class="fa fa-comments fa-2x" style="margin-left:10px; opacity:0.5;" onmouseover="style='margin-left:10px; opacity: 1;'" onmouseout=" style='margin-left:10px; opacity: 0.5;'"></li>
+                    <li class="fa fa-globe fa-2x" style="margin-left:10px; opacity:0.5;" onmouseover="style='margin-left:10px; opacity: 1;'" onmouseout=" style='margin-left:10px; opacity: 0.5;'"></li>  
+                </ul>
+
                 <ul class="nav navbar-nav navbar-right" data-bind="foreach: router.navigationModel">
                     <li data-bind="css: { active: isActive }">
                         <a data-bind="attr: { href: hash }, text: title" style="color:#ffffff;"></a>
+                    </li>
+                </ul>
+
+
+
+                <ul class=" img_cover navbar-right  " style="margin-right: 15px; margin-top: 10px; padding:5px 5px 5px 5px">
+                    <li>
+                        <a href="#timeline"><img class="img-thumbnail" style="  padding:0; width: 20px; height: 20px;" data-bind="attr: { src: photo }">&nbsp;
+                    <span data-bind="text: name" style="color:white;"></span></a>
+
                     </li>
                 </ul>
 

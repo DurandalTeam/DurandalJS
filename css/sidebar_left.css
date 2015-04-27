@@ -344,3 +344,9 @@ li .photo{
     height: 500px;
     float: right;
 }
+
+/*@media screen and (max-width: 780px) {
+    #information {
+       visibility: hidden;
+    }
+}*/

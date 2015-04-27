@@ -1,8 +1,10 @@
+
 .fa {
     color: white;
     background-color: #425F9C;
     border-radius: 25px;
-    padding-top: 11px;
+    margin-top: 11px;
+    /*padding-top: 11px;*/
 }
 
 .navbar {
@@ -20,6 +22,10 @@
 
 .navbar-default .navbar-nav > .active > a:hover {
     background-color: darkblue;
+}
+.img_cover:hover{
+    background-color: darkblue;
+    border-radius:5px;
 }
 
 .navbar-default .navbar-nav > .active  > a,
@@ -81,4 +87,14 @@
     .collapse.in{
         display:block !important;
     }
+}
+
+
+
+#iconTop .fa{
+    color: #23355B;
+}
+#iconTop .fa:active{
+    color:white;
+
 }
