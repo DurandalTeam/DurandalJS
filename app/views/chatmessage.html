@@ -5,8 +5,8 @@
         <a href="">Inbox</a> - <a href="">other</a>
         <form class="bs-example bs-example-form" data-example-id="simple-input-groups">
           <div class="input-group">
-            <input class="form-control" placeholder="What do you want to search?" aria-describedby="basic-addon2" type="text">
-            <span class="input-group-addon" id="basic-addon2">
+            <input class="form-control" data-bind="value: firstValue" placeholder="What do you want to search?" aria-describedby="basic-addon2" type="text">
+            <span class="input-group-addon" data-bind="click : filterMessage" id="basic-addon2">
               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
             </span>
           </div>
