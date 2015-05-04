@@ -1,5 +1,5 @@
 define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, app, ko, $){
-  return{
+  var chatMessage = {
     listFriend: ko.observableArray([]),
     listComment: ko.observableArray([]),
     friend: ko.observable(),
@@ -15,7 +15,7 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
           var length = datalocal.messages.data[n].comments.data.length;
           datalocal.messages.data[n].comments.data[length-1].message;
           LF[n].last_message = datalocal.messages.data[n].comments.data[length-1].message;
-          localStorage.setItem(datalocal.messages.data[n].to.data[1].id,JSON.stringify(datalocal.messages.data[n].comments.data));
+          // localStorage.setItem(datalocal.messages.data[n].to.data[1].id,JSON.stringify(datalocal.messages.data[n].comments.data));
         }
 
         that.friend(datalocal.messages.data[1].to.data[1].name)
@@ -27,8 +27,8 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
       });
     },
     filterMessage : function() {
-          var that = this;
-          var message = this.firstValue();
+          var that = chatMessage;
+          var message = chatMessage.firstValue();
           $.getJSON('app/dataModel/messages.json', function(dataComment){
             var tempcomments=[];
             var temp = 0;
@@ -64,8 +64,8 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
                           return (element.message == message);
                         }
                         var filtered  = tempcomments.filter(isBigEnough);
-                        alert(tempcomments.length);
-                        alert(filtered.length);
+                        // alert(tempcomments.length);
+                        // alert(filtered.length);
                         that.listComment(filtered);
                       }).error(function(jqXhr, textStatus, error) {
                         alert("ERROR: " + textStatus + ", " + error);
@@ -73,9 +73,9 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
      },
 
       select: function(item){
-        console.log(item);
+        console.log( item);
 
-        var that = this;
+        var that = chatMessage;
         $.getJSON('app/dataModel/messages.json', function(datalocal){
 
         // var comment = [];
@@ -102,4 +102,6 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
       // this.listComment(chat);
     }
   }
+
+  return chatMessage;
 });
