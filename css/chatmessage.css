@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px){
+    .pSmallScreen{
+      display: none;
+    }
+    .imgSmallScreen{
+      max-width: 45px;
+      float:none;
+    }
+  }
+  @media screen and (min-width: 768px){
+    .imgMediumScreen{
+      max-width: 50px;
+      float:left;
+      margin-right: 5px;
+    }
+  }
+  .listFriend{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 3px;
+  }
+  .imgInChat{
+    margin-right: 5px;
+  }
+  .created_time{
+    float:right;
+  }

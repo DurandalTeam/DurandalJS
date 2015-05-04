@@ -1,42 +1,20 @@
-<style type="text/css">
-  @media screen and (max-width: 768px){
-    .pSmallScreen{
-      display: none;
-    }
-    .imgSmallScreen{
-      max-width: 45px;
-      float:none;
-    }
-  }
-  @media screen and (min-width: 768px){
-    .imgMediumScreen{
-      max-width: 50px;
-      float:left;
-      margin-right: 5px;
-    }
-  }
-  .listFriend{
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-bottom: 1px gray solid;
-    padding-bottom: 3px;
-  }
-  .imgInChat{
-    margin-right: 5px;
-  }
-  .created_time{
-    float:right;
-  }
-</style>
 <div class="container" style="width=1200px">
     <div id="notification" class="row">
       <!-- inbox-other -->
-      <div class="col-xs-12 col-sm-6 col-md-3" style="border-bottom: 1px solid gray; height: 41px; padding-top: 10px;">
+      <div class="col-xs-12 col-sm-6 col-md-3" style="border-bottom: 1px solid gray; height: 70px; padding-top: 10px;">
         <a href="">Inbox</a> - <a href="">other</a>
+        <form class="bs-example bs-example-form" data-example-id="simple-input-groups">
+          <div class="input-group">
+            <input class="form-control" placeholder="What do you want to search?" aria-describedby="basic-addon2" type="text">
+            <span class="input-group-addon" id="basic-addon2">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </span>
+          </div>
+        </form>
       </div>
       <!-- new messages -->
-      <div class="col-xs-12 col-sm-6 col-md-9" style="border-bottom: 1px solid gray">
-        <div class="btn-group" style="padding-top: 5px;padding-bottom: 5px;">
+      <div class="col-xs-12 col-sm-6 col-md-9" style="border-bottom: 1px solid gray; height:70px">
+        <div class="btn-group" style="padding-top: 20px;padding-bottom: 5px;">
           <button type="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           </button>
@@ -45,18 +23,19 @@
             <span class="sr-only">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
+            <li><a href="#">akhsdgfgljsu</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
         </div>
-        <p style="float:right" data-bind="text:fiend"></p>
+        <p style="float:right; font-weight: bold; margin-top:10px; font-size: 14px;" data-bind="text:friend"></p>
       </div>
       <!-- list friends -->
-      <div class="col-xs-3 col-sm-3 col-md-3" style="overflow-x: hidden; overflow-y: scroll; height: 85vh;">
-        <div data-bind="foreach: listFriend">
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        
+        <div data-bind="foreach: listFriend" style="overflow-x: hidden; overflow-y: scroll; height: 80vh;">
           <div class="listFriend" style="overflow: hidden; height: 55px;">
             <img src="./image/avar.jpg" class="img-rounded imgSmallScreen imgMediumScreen">
             <a href="", data-bind="click:$parent.select">
@@ -68,7 +47,7 @@
       </div>
       <!-- content -->
       <div class="col-xs-9 col-sm-9 col-md-9" style="padding-top: 5px;">
-        <div style="overflow-x: hidden; overflow-y: scroll;height: 79vh;">
+        <div style="overflow-x: hidden; overflow-y: scroll;height: 75vh;">
           <div data-bind="foreach: listComment">
           <img src="./image/avar.jpg" style="float:left; width: 50px;" class="img-rounded imgInChat">
             <p><strong data-bind="text: from.name"></strong></p><p data-bind="text: created_time" class="created_time"></p>

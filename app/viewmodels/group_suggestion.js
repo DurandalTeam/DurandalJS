@@ -30,6 +30,16 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
           }).error(function(jqXhr, textStatus, error) {
               alert("ERROR: " + textStatus + ", " + error);
           });
+        },
+        attached: function()
+        {
+          // $("p").css("color","red");
+          $(".item", this).mouseover(function(){
+            $(this).find(".showButton").show();
+          });
+          $(".item").mouseout(function(){
+            $(".showButton").hide();
+          });
         }
     }
 });
