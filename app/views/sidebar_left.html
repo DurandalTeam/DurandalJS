@@ -74,7 +74,7 @@
 
         <ul class="photo" style=" padding: 0" data-bind="foreach: friends">
             <a data-bind="attr: { href: link}">
-                <li class="col-sm-4" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
+                <li class="col-sm-4 col-xs-4" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
                     <span class="text" data-bind="text:name"></span>
                 </li>
 
@@ -100,10 +100,10 @@
         </div>
     </div>
 
-    <div class="images col-sm-12" style=" padding: 0">
+    <div class="images col-sm-12 col-xs-12" style=" padding: 0">
         <ul class="photo" style=" padding: 0" data-bind="foreach: photos">
             <a href="#" data-bind="click:$parent.selectPhoto">
-                <li class="col-sm-4" ><img data-bind="attr: { src: images }" class="image img-thumbnail" ></li>
+                <li class="col-sm-4 col-xs-4" ><img data-bind="attr: { src: images }" class="image img-thumbnail" ></li>
             </a>
         </ul>
     </div>
@@ -133,10 +133,10 @@
         </div>
     </div>
 
-    <div class="images col-sm-12" style=" padding: 0">
+    <div class="images col-sm-12 col-xs-12" style=" padding: 0">
         <ul class="photo" style=" padding: 0" data-bind="foreach: videos">
             <a href="#" data-bind="click:$parent.selectVideo">
-                <li class="col-sm-4 videoimage" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
+                <li class="col-sm-4 col-xs-4 videoimage" ><img data-bind="attr: { src: picture }" class="image img-thumbnail" >
                     <div  class="playbutton">
                         <span class="glyphicon glyphicon-play-circle"></span>
                     </div>
