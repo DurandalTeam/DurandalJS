@@ -1,65 +1,28 @@
-﻿
-
-<div class="container">
-
-
-        <div id="headerTimeLine" data-bind="compose:'timeLineHeader.html'" class="col-sm-12 col-md-12"  >
-        </div>
-      <!--   <!-- sidebar left -->
-        <div id="tabLeft" class="col-lg-3 col-sm-3 col-xs-12 col-md-3"  data-bind="compose:'viewmodels/sidebar_left'" ></div>
-        <!-- end side bar left -->
-
-
-        <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
-            <div class="panel-group">
-                <div class="panel panel-success">
-                    <div class="panel-heading">First feed</div>
-                    <div>
-                        <div data-bind="compose:'viewmodels/commentfeed'"></div>
-                    </div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-search"></span>
-                        Games</div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-envelope">
-                        On this day</span></div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-print"></span>
-                        Dragon City</div>
-                </div>
-                <div class="panel panel-success">
-                    <div class="panel-heading">Second feed</div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-search"></span>
-                        New Group
-                    </div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        UC Client
-                    </div>
-                    <div class="panel-body">
-                        <span class="glyphicon glyphicon-print"></span>
-                        Create Group
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-3 col-xs-12   col-md-3" style="padding: 0">
-            <div class="panel-group">
-                <div class="panel panel-info">
-                    <div class="panel-heading col-md-12">
-                        PEOPLE YOU MAY KNOW
-                        <a style="float: right" href="#"><span style="font-size: 10px">See all</span></a>
-                    </div>
-                    <div class="panel-body" data-bind="compose:'viewmodels/friendsuggestion'"></div>
-                </div>
-                <div class="panel panel-info">
-                    <div>
-                      <div data-bind="compose:'viewmodels/group_suggestion'"></div>
-                    </div>
-                </div>
-            </div>
-        </div> 
+﻿<div class="container">
+    <div id="headerTimeLine" data-bind="compose:'timeLineHeader.html'" class="col-sm-12 col-md-12"  >
     </div>
+    <!-- sidebar left -->
+    <div id="tabLeft" class="col-lg-3 col-sm-3 col-xs-3 col-md-3"  data-bind="compose:'viewmodels/sidebar_left'" ></div>
+    <!-- end side bar left -->
+    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+        <div data-bind="compose:'viewmodels/feed'"></div>
+        <!--<div data-bind="compose:'viewmodels/commentfeed'"></div>-->
+    </div>
+    <div class="col-lg-3 col-sm-3 col-xs-3   col-md-3" style="padding: 0">
+        <div class="panel-group">
+            <div class="panel panel-info">
+                <div class="panel-heading col-md-12">
+                    PEOPLE YOU MAY KNOW
+                    <a style="float: right" href="#"><span style="font-size: 10px">See all</span></a>
+                </div>
+                <div class="panel-body" data-bind="compose:'viewmodels/friendsuggestion'"></div>
+            </div>
+            <div class="panel panel-info">
+                <div>
+                    <div data-bind="compose:'viewmodels/group_suggestion'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

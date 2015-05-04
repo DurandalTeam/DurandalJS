@@ -1,0 +1,86 @@
+.xb.blue-dark {
+    color: #3b5998;
+}
+
+.margin-right-5px {
+    margin-right: 5px;
+}
+
+.xb.pointer {
+    cursor: pointer;
+}
+
+.xb.feedItem {
+    width: 100%;
+    background: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.xb.feedItem .avatar {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    border-radius: 2px;
+}
+
+.xb.feedItem > .from {
+    display: inline;
+    padding: 10px;
+}
+
+.xb.feedItem .name {
+    color: #2064B1;
+    font-weight: bolder;
+}
+
+.xb.cmts {
+    /*padding: 0 0 0 50px;*/
+}
+
+.xb.cmt {
+    margin-top: 5px;
+    background: #EDEFF4;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.xb.cmt .avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.xb.cmt > .left {
+    margin-right: 7px;
+    float: left;
+    width: 35px;
+    line-height: auto;
+}
+
+.xb.cmt > .right {
+    display: inline;
+    max-width: 430px;
+    float: left;
+    overflow: hidden;
+}
+
+span.feed-btn {
+    color: #99A5DA;
+    cursor: pointer;
+}
+
+.crtTime {
+    color: #B9AFA6;
+}
+
+.clear {
+    clear: both;
+}
+
+.msg-picture img {
+    width: 490px;
+    height: auto;
+    border-radius: 2px;
+}

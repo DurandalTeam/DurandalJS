@@ -1,37 +1,45 @@
-<section style="width: 470px">
-    <div data-bind="foreach: feeds">
-        <div style="width: 100%; min-height:40px; height: auto;">
-            <div style="float: left; width: 10%; height: 40px;">
-                <img style="height: 100%; border-radius: 0px;" src="./image/my-pic.jpg" class="img-rounded"/>
-            </div>
-            <div style="float: left; width: 65%; height: 100%">
-                <a href="#" data-bind="text: from.name"></a><br/>
-            </div>
-        </div>
-        <div style="width: 100%; min-height:40px; height: auto;">
-            <div style="float: left; width: 100%; height: 100%;">
-                <div>
-                    <p data-bind="text: message">
-                        <!--Relax cuoi tuan nao!!! :D-->
-                    </p>
-                </div>
-                <div style="float: left; width: 470px; height: 376px;">
-                    <img style="width: 100%; height: 100%; border-radius: 0px;" data-bind="attr:{src: picture}" class="img-rounded"/>
-                </div>
-                <div>
-                    <a href="#">Like</a> · 
-                    <a href="#">Comment</a> · 
-                    <a href="#">Share</a>
-                </div>
-                <div>
-                    <div style="float: left; width: 10%; height: 40px;">
-                        <img style="height: 100%; border-radius: 0px;" src="./image/my-pic.jpg" class="img-rounded"/>
-                    </div>
-                    <div style="float: left; width: 90%; height: 40px;">
-                        <input style="width: 100%; height: 100%;" type="text" placeholder="Write a comment..." />
-                    </div>
-                </div>
-            </div>
+<section data-bind="foreach: feeds">
+    <article class="xb feedItem">
+    <div class="xb feedItem header">
+        <img class="avatar" data-bind="attr:{src: from.url}"/>
+        <div class="from">
+            <span class="name" data-bind="text: from.name"></span>
         </div>
     </div>
+    <div style="xb feedItem body">
+        <div>
+            <p data-bind="text: message"></p>
+        </div>
+        <!-- ko if: picture -->
+        <div class="msg-picture">
+            <img data-bind="attr:{src: picture}"/> 
+        </div>
+        <!-- /ko -->
+        <div>
+            <span class="feed-btn">Like</span> ·
+            <span class="feed-btn">Comment</span> ·
+            <span class="feed-btn">Share</span>
+        </div>
+        <!-- Comment -->
+        <div>
+            <!-- ko if: comments -->
+            <p class="xb blue-dark pointer">Xem thêm <span></span> bình luận khác</p>
+            <div data-bind="foreach: comments.data" class="xb cmts">
+                <div class="xb cmt">
+                    <div class="xb left">
+                        <img class="avatar" data-bind="attr:{src: from.url}">
+                    </div>
+                    <div class="xb right">
+                        <span><span data-bind="text: from.name" class="margin-right-5px name"></span><!-- ko text: message --><!-- /ko --></span><br>
+                        <abbr class="crtTime"><!-- ko text: created_time --><!-- /ko --> &bull;</abbr>
+                        <span class="feed-btn xb pointer">Like</span>
+                    </div>
+                    <br class="clear">
+                </div>
+            </div>
+            <!-- /ko -->
+        </div>
+        <!-- /Comment -->
+    </div>
+    </article>
 </section>
