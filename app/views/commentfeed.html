@@ -1,22 +1,23 @@
-<div style="margin-left: 12px; margin-right: 12px">
+<!--<div style="margin-left: 12px; margin-right: 12px">-->
+
     <div id = "seemore" style="padding-top: 9px; padding-bottom: 7px; margin-right: 12px">
         <div>
-            <a href="#" style="color: #3b5998" data-bind="click:select">
+            <a class = "comment" href="#" style="color: #3b5998" data-bind="click:select">
                 Xem thêm <span data-bind="text: lengthCommentFilter"></span> bình luận khác
             </a>
         </div>
     </div>
 
-    <div class="row" data-bind="foreach: LComment">
+    <div id = "divlist" class="row" data-bind="foreach: LComment">
         <form class="form-horizontal" role="form">
             <div class="form-group has-error has-feedback" style="margin: 0">
                 <label class="col-sm-1 control-label" style="padding-right: 0; padding-top: 4px">
-                    <img class="img-responsive" data-bind="attr: {src: from.url}" style="width: 100%; height: 100%">
+                    <img class="img-responsive" data-bind="attr: {src: from.photo}" style="width: 100%; height: 100%">
                 </label>
                 <div class="col-sm-10" style="padding-right: 0; padding-left: 8px">
                     <div style="padding-left: 0; padding-right: 0; border: 0">
                         <div>
-                            <a href="">
+                            <a class = "comment" href="">
                                 <span style ="font-weight: bold; color: #3b5998" data-bind="text: from.name"></span>
                             </a>
                             <span>
@@ -26,36 +27,39 @@
                         </div>
                         <div>
                             <span>
-                                <a href="" style ="color: #9197a3">
+                                <a class = "comment" href="" style ="color: #9197a3">
                                     <abbr data-bind="text: created_time"></abbr>
                                 </a>
                             </span>
                             <span> . </span>
-                            <span><a href="" style ="color: #3b5998">Thích</a></span>
+                            <span><a class = "comment" href="" style ="color: #3b5998">Thích</a></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-1 btnClose">
+                <div class="col-sm-1 btnClose iconinput">
                     <i class="fa fa-times" style="float: right"></i>
                 </div>
             </div>
         </form>
     </div>
+
     <div class="row">
         <form class="form-horizontal-" role="form">
             <div class="form-group has-feedback" style="margin: 0">
                 <label class="col-sm-1 control-label" style="padding-right: 0; padding-top: 4px">
-                    <img class="img-responsive" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xtp1/v/t1.0-1/p50x50/10636075_754648827936816_2014029880228452476_n.jpg?oh=aed12b54f54cea11e12c54c0f20b786c&oe=55DBC999&__gda__=1440119390_b5a588e1b2b03f954c3bd5eb13d18144" style="width: 100%; height: 100%">
+                    <a href =https://www.facebook.com/app_scoped_user_id/656497577745299/">
+                        <img class="img-responsive" data-bind="attr: {src: myPhoto}" style="width: 100%; height: 100%">
+                    </a>
                 </label>
-                <div class="col-sm-11" style="padding-right: 0; padding-left: 8px;margin-top: 8px">
+                <div class="col-sm-11" style="padding-right: 12px; padding-left: 8px;margin-top: 8px">
                     <div class ="Input col-sm-12 form-group" style="padding-left: 0; margin-bottom: 0; padding-right: 0">
-                        <input  class = "inputtext col-sm-10 nonePadding" id = "in" role = "button" data-bind="value: message" type="text"  style="border: 0" placeholder= "Write comment...">
-                        <div class="col-sm-2 nonePadding">
-                            <div class=" iconinput col-sm-6 nonePadding">
-                                <i class="icon fa fa-camera" style="padding-top: 4px; float: right"></i>
+                        <input  class = "inputtext col-sm-10 nonePadding" id = "in" role = "button" type="text"  style="border: 0" placeholder= "Write comment...">
+                        <div class="col-sm-2 nonePadding iconinput">
+                            <div class="col-sm-6 nonePadding">
+                                <i class="icon fa fa-camera" style="margin-top: 5px; float: right"></i>
                             </div>
-                            <div class=" iconinput col-sm-6">
-                                <i class="icon fa fa-smile-o" style="padding-top: 4px; float: right"></i>
+                            <div class="col-sm-6">
+                                <i class="icon fa fa-smile-o" style="margin-top: 5px; float: right"></i>
                             </div>
 
                         </div>
@@ -64,4 +68,16 @@
             </div>
         </form>
     </div>
-</div>
+
+    <div>
+        <button class="btn btn-default" data-bind='click: addComment'>Add a Comment</button>
+    </div>
+
+    <div>
+        <input type="text" id = "inputex" onPaste="" onkeydown="if (event.keyCode == 13) { alert('enter');return false;}">
+
+    </div>
+
+
+
+<!--</div>-->

@@ -42,4 +42,9 @@ i.icon:hover{
 
 div.iconinput i {
     background-color: white;
+    margin-top: 0;
+}
+
+a.comment:hover {
+    text-decoration: underline;
 }
