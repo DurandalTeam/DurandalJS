@@ -31,15 +31,15 @@ define(['plugins/http', 'durandal/app', 'knockout','jquery'], function (http, ap
               alert("ERROR: " + textStatus + ", " + error);
           });
         },
-        attached: function()
-        {
-          // $("p").css("color","red");
-          $(".item", this).mouseover(function(){
-            $(this).find(".showButton").show();
-          });
-          $(".item").mouseout(function(){
-            $(".showButton").hide();
-          });
-        }
+        // attached: function()
+        // {
+        //   // $("p").css("color","red");
+        //   $(".item", this).mouseover(function(){
+        //     $(this).find(".showButton").show();
+        //   });
+        //   $(".item").mouseout(function(){
+        //     $(".showButton").hide();
+        //   });
+        // }
     }
 });
